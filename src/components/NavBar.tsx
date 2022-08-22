@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import img1 from "../assets/images/me.jpg"
 
 function NavBar() {
@@ -10,36 +10,26 @@ function NavBar() {
 			<a>
 				<img className="circle" src={img1} />
 			</a>
-			<a>
+			<NavLink to="/">
 				<i>home</i>
-				<span>
-					<Link to="/">Home</Link>
-				</span>
-			</a>
-			<a>
+				<span>Home</span>
+			</NavLink>
+			<NavLink to="/skills">
 				<i>widgets</i>
-				<span>
-					<Link to="/skills">Skills</Link>
-				</span>
-			</a>
-			<a>
+				<span>Skills</span>
+			</NavLink>
+			<NavLink to="/aboutme">
 				<i>account_circle</i>
-				<span>
-					<Link to="/aboutme">About Me</Link>
-				</span>
-			</a>
-			<a>
+				<span>About Me</span>
+			</NavLink>
+			<NavLink to="/projects">
 				<i>fingerprint</i>
-				<span>
-					<Link to="/projects">Projects</Link>
-				</span>
-			</a>
-			<a>
+				<span>Projects</span>
+			</NavLink>
+			<NavLink to="/more">
 				<i>code</i>
-				<span>
-					<Link to="/more">More</Link>
-				</span>
-			</a>
+				<span>More</span>
+			</NavLink>
 			<a>
 				<i>palette</i>
 				<span>Theme</span>
