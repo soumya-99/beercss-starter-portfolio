@@ -1,0 +1,18 @@
+.container {
+	display: grid;
+	grid-template: 85rem auto / 11fr 89fr;
+	grid-template-areas:
+		"header header"
+		"sidebar content";
+	height: 100vh;
+}
+
+.header {
+	grid-area: header;
+}
+
+.content {
+	overflow-y: scroll;
+	padding: 10rem;
+	padding-right: 20rem;
+}

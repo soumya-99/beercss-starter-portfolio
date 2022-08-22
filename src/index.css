@@ -1,0 +1,47 @@
+@font-face {
+	font-family: android-euclid;
+	src: url("./fonts/android-euclid/AndroidEuclid-Regular-WebS.woff2")
+			format("woff2"),
+		url("./fonts/android-euclid/AndroidEuclid-Semibold-WebS.woff2")
+			format("woff2"),
+		url("./fonts/android-euclid/AndroidEuclid-Medium-WebS.woff2")
+			format("woff2");
+}
+
+@font-face {
+	font-family: google-sans;
+	src: url("./fonts/google-sans/GoogleSans-Regular.woff2") format("woff2"),
+		url("./fonts/google-sans/GoogleSans-Medium.woff2") format("woff2"),
+		url("./fonts/google-sans/GoogleSans-Bold.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: rgb(53, 57, 61);
+  color: #ccc; */
+  margin: 0;
+  font-family: android-euclid, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
