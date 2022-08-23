@@ -18,7 +18,9 @@ function SideBar({ isOpen, onClose }: SideBarProps) {
 		<>
 			<div className={`modal page top ${isOpen}`}>
 				<h5>Options</h5>
-				<div>Go to...</div>
+				<div className="small-divider"></div>
+				<div>All Navigations and some love 😘</div>
+				<div className="small-divider"></div>
 				<NavLink to="/" className="row round">
 					<i>home</i>
 					<span>Home</span>
