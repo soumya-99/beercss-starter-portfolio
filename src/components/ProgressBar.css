@@ -1,0 +1,9 @@
+.small-space {
+	width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	.small-space {
+		width: 60vw;
+	}
+}
