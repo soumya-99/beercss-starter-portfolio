@@ -10,13 +10,12 @@ export function useTheme() {
 export function useThemeUpdate() {
 	return useContext(ThemeUpdateContext)
 }
-
 interface Props {
 	children?: ReactNode
 }
 
 export function ThemeProvider({ children }: Props) {
-	const [darkTheme, setDarkTheme] = useState(true)
+	const [darkTheme, setDarkTheme] = useState(false)
 
 	const toggleTheme = () => {
 		setDarkTheme((prevDarkTheme) => !prevDarkTheme)

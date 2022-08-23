@@ -4,10 +4,10 @@ import SideBar from "./SideBar"
 
 interface HeaderProps {
 	title: string
-	toggleDark: () => void
+	// toggleDark?: () => void
 }
 
-function Header({ title = "Soumyadeep Mondal", toggleDark }: HeaderProps) {
+function Header({ title = "Soumyadeep Mondal" }: HeaderProps) {
 	const [sidebarOpen, setSidebarOpen] = useState(false)
 
 	const toggleSidebar = () => {
@@ -25,13 +25,9 @@ function Header({ title = "Soumyadeep Mondal", toggleDark }: HeaderProps) {
 				</button>
 				<h5 className="max center-align">{title}</h5>
 				<div className="right-head">
-					<button
-						className="circle transparent darkmode"
-						onClick={() => toggleDark()}
-					>
+					<button className="circle transparent darkmode">
 						<img className="responsive" src={img1} />
-						{/* <i>face</i> */}
-						<div className="tooltip bottom">Toggle Dark</div>
+						<div className="tooltip bottom">It's Soumya!</div>
 					</button>
 				</div>
 			</nav>
