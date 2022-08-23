@@ -19,7 +19,7 @@ function App() {
 
 	const materialTheme = async () => {
 		// @ts-ignore
-		let theme = await ui("theme", "#cc00ff")
+		let theme = await ui("theme", "#ff00ff")
 		return theme
 	}
 

@@ -1,4 +1,6 @@
-import { Link, NavLink } from "react-router-dom"
+import { useState } from "react"
+import { NavLink } from "react-router-dom"
+import ThemeModal from "./ThemeModal"
 
 interface SideBarProps {
 	isOpen: string
@@ -6,7 +8,14 @@ interface SideBarProps {
 }
 
 function SideBar({ isOpen, onClose }: SideBarProps) {
+	const [openModal, setOpenModal] = useState(false)
+
+	const toggleThemeModal = () => {
+		setOpenModal(!openModal)
+	}
+
 	return (
+		<>
 		<div className={`modal page top ${isOpen}`}>
 			<h5>Options</h5>
 			<div>Go to...</div>
@@ -30,7 +39,7 @@ function SideBar({ isOpen, onClose }: SideBarProps) {
 				<i>code</i>
 				<span>More</span>
 			</NavLink>
-			<a className="row round">
+			<a className="row round" onClick={toggleThemeModal}>
 				<i>palette</i>
 				<span>Theme</span>
 			</a>
@@ -40,6 +49,10 @@ function SideBar({ isOpen, onClose }: SideBarProps) {
 				</button>
 			</nav>
 		</div>
+		{openModal && (
+			<ThemeModal isOpen="active" onClose={() => toggleThemeModal()} />
+		)}
+		</>
 	)
 }
 

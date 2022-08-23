@@ -13,7 +13,6 @@ function Header({ title = "Soumyadeep Mondal", toggleDark }: HeaderProps) {
 	const toggleSidebar = () => {
 		setSidebarOpen(!sidebarOpen)
 	}
-	
 
 	return (
 		<header
@@ -25,9 +24,16 @@ function Header({ title = "Soumyadeep Mondal", toggleDark }: HeaderProps) {
 					<i>menu</i>
 				</button>
 				<h5 className="max center-align">{title}</h5>
-				<button className="circle transparent" onClick={() => toggleDark()}>
-					<img className="responsive" src={img1} />
-				</button>
+				<div className="right-head">
+					<button
+						className="circle transparent darkmode"
+						onClick={() => toggleDark()}
+					>
+						<img className="responsive" src={img1} />
+						{/* <i>face</i> */}
+						<div className="tooltip bottom">Toggle Dark</div>
+					</button>
+				</div>
 			</nav>
 			{sidebarOpen && (
 				<SideBar isOpen="active" onClose={() => toggleSidebar()} />
