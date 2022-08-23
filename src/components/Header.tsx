@@ -1,17 +1,19 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import img1 from "../assets/images/me.jpg"
 import SideBar from "./SideBar"
 
 interface HeaderProps {
 	title: string
+	toggleDark: () => void
 }
 
-function Header({ title = "Soumyadeep Mondal" }: HeaderProps) {
+function Header({ title = "Soumyadeep Mondal", toggleDark }: HeaderProps) {
 	const [sidebarOpen, setSidebarOpen] = useState(false)
 
 	const toggleSidebar = () => {
 		setSidebarOpen(!sidebarOpen)
 	}
+	
 
 	return (
 		<header
@@ -23,7 +25,7 @@ function Header({ title = "Soumyadeep Mondal" }: HeaderProps) {
 					<i>menu</i>
 				</button>
 				<h5 className="max center-align">{title}</h5>
-				<button className="circle transparent">
+				<button className="circle transparent" onClick={() => toggleDark()}>
 					<img className="responsive" src={img1} />
 				</button>
 			</nav>

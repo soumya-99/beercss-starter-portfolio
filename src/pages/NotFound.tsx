@@ -1,7 +1,7 @@
 function NotFound() {
 	return (
 		<div>
-			<h2>NotFound</h2>
+			<h2>Not Found</h2>
       <hr />
 			<p>Get Lost of here!</p>
 		</div>

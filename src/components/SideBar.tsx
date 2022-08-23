@@ -18,7 +18,7 @@ function SideBar({ isOpen, onClose }: SideBarProps) {
 				<i>widgets</i>
 				<span>Skills</span>
 			</NavLink>
-			<NavLink to="/aboutus" className="row round">
+			<NavLink to="/aboutme" className="row round">
 				<i>account_circle</i>
 				<span>About Me</span>
 			</NavLink>

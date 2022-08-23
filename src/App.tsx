@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import { useRoutes } from "react-router-dom"
 import "./App.css"
 import Header from "./components/Header"
@@ -10,6 +11,23 @@ import Projects from "./pages/Projects"
 import Skills from "./pages/Skills"
 
 function App() {
+	const [dark, setDark] = useState(false)
+
+	const toggleDark = () =>{
+		setDark(!dark)
+	}
+
+	const materialTheme = async () => {
+		// @ts-ignore
+		let theme = await ui("theme", "#cc00ff")
+		return theme
+	}
+
+	useEffect(() => {
+		document.body.className = dark ? "dark" : "light"
+		materialTheme()
+	}, [dark])
+
 	const components = useRoutes([
 		{
 			path: "/",
@@ -40,7 +58,7 @@ function App() {
 	return (
 		<div className="container">
 			<div className="box header">
-				<Header title="Soumyadeep Mondal" />
+				<Header title="Soumyadeep Mondal" toggleDark={toggleDark} />
 			</div>
 			<div className="box navbar">
 				<NavBar />
