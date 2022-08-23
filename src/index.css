@@ -44,6 +44,11 @@ h2 {
   font-weight: 900;
 }
 
+button {
+  background-color: var(--tertiary);
+  color: var(--on-tertiary);
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

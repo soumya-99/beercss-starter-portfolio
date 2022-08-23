@@ -46,11 +46,11 @@ function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 				<div style={{marginTop: "15px"}}>
 					OR
 				</div>
-				<div className="field label border">
+				<div className="field label border round">
 					<input type="text" />
 					{/* @ts-ignore */}
 					<input type="file" accept=".jpg, .png, .jpeg, .webp, .svg" onChange={selectFile} />
-					<label>Your Photo</label>
+					<label>Upload Your Photo</label>
 					<span className="helper">Choose any photo to apply theme.</span>
 				</div>
 			</div>

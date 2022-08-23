@@ -1,0 +1,25 @@
+.page {
+    font-family: google-sans;
+}
+
+.body-text {
+    font-size: 2.5em;
+    text-align: left;
+    text-indent: 1.5em;
+    color: var(--primary);
+}
+
+.body-elems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .body-elems {
+        flex-direction: column;
+    }
+    .chip {
+        margin-top: 1em;
+    }
+}
