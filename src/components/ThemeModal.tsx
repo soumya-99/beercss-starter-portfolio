@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useState } from "react"
 import { useTheme, useThemeUpdate } from "../context/ThemeProvider"
 
 interface ThemeModalProps {
@@ -31,9 +31,6 @@ function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 
 	useEffect(() => {
 		document.body.className = dark ? "dark" : "light"
-
-		if (input === "") {
-		}
 	}, [dark])
 
 	useEffect(() => {
@@ -42,7 +39,7 @@ function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 		} else {
 			materialThemeColor(input)
 		}
-	}, [input, dark])
+	}, [input, dark, currentFile])
 
 	return (
 		<div

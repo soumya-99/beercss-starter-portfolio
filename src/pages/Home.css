@@ -1,47 +1,80 @@
 .page {
-    font-family: google-sans;
+	font-family: google-sans;
 }
 
 .typedElem {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .underline {
-    height: 12rem;
-    width: 172rem;
-    background-color: var(--primary);
-    opacity: 0.4;
-    bottom: 25rem;
-    transition: all 0.3s;
+	height: 12rem;
+	width: 172rem;
+	background-color: var(--primary);
+	opacity: 0.4;
+	bottom: 25rem;
+	transition: all 0.3s;
 }
 
 .underline:hover {
-    height: 12rem;
-    width: 172rem;
-    background-color: var(--primary);
-    opacity: 0.6;
+	height: 12rem;
+	width: 172rem;
+	background-color: var(--primary);
+	opacity: 0.6;
 }
 
 .body-text {
-    font-size: 2em;
-    text-align: left;
-    text-indent: 1.5em;
-    color: var(--primary);
+	font-size: 2em;
+	text-align: left;
+	text-indent: 1.5em;
+	line-height: 1.3cm;
+	color: var(--primary);
+}
+
+.body-main {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	justify-content: space-between;
+	bottom: 20px;
+	width: 74vw;
+	margin-left: 7%;
+}
+
+.social {
+	margin-top: 2vh;
+	margin-bottom: 5vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.chip > span {
+	font-weight: bold;
 }
 
 .body-elems {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 @media screen and (max-width: 600px) {
-    .body-elems {
-        flex-direction: column;
-    }
-    .chip {
-        margin-top: 1em;
-    }
+	.body-elems {
+		flex-direction: column;
+	}
+	.body-main {
+		margin-top: 2vh;
+		flex-direction: column-reverse;
+	}
+	.social {
+		margin-top: -2vh;
+		margin-bottom: 5vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.chip {
+		margin-top: 1em;
+	}
 }
