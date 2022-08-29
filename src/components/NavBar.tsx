@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import img1 from "../assets/images/me.jpg"
+import Theme from "./Theme"
 import ThemeModal from "./ThemeModal"
 
 function NavBar() {
@@ -32,21 +33,16 @@ function NavBar() {
 					<span>About Me</span>
 				</NavLink>
 				<NavLink to="/projects">
-					<i>fingerprint</i>
+					<i>rocket_launch</i>
 					<span>Projects</span>
 				</NavLink>
 				<NavLink to="/more">
 					<i>code</i>
 					<span>More</span>
 				</NavLink>
-				<a onClick={toggleThemeModal}>
-					<i>palette</i>
-					<span>Theme</span>
-				</a>
+				<Theme icon="palette" onClick={toggleThemeModal} text="Theme" />
 			</nav>
-			{openModal && (
-				<ThemeModal isOpen="active" onClose={() => toggleThemeModal()} />
-			)}
+			{openModal && <ThemeModal isOpen="active" onClose={toggleThemeModal} />}
 		</>
 	)
 }

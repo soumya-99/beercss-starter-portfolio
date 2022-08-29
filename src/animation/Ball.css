@@ -1,0 +1,21 @@
+.ball {
+    position: absolute;
+    opacity: 0.8;
+    animation: ball 3s linear infinite;
+    transition: transform .5s;
+}
+
+@keyframes ball {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    0% {
+        transform: translateY(0);
+    }
+}

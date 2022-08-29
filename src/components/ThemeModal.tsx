@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { useTheme, useThemeUpdate } from "../context/ThemeProvider"
 
 interface ThemeModalProps {
@@ -8,7 +8,7 @@ interface ThemeModalProps {
 
 function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 	const [input, setInput] = useState("")
-	const [currentFile, setCurrentFile] = useState(undefined)
+	const [currentFile, setCurrentFile] = useState(() => undefined)
 
 	const selectFile = (e: EventTarget) => {
 		// @ts-ignore
@@ -19,37 +19,52 @@ function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 	const dark = useTheme()
 	const updateDark = useThemeUpdate()
 
-	const materialTheme = async (color: string) => {
-		if (currentFile) {
-			// @ts-ignore
-			await ui("theme", currentFile)
-		} else {
-			// @ts-ignore
-			await ui("theme", color)
-		}
+	const materialThemeColor = async (color: string) => {
+		// @ts-ignore
+		await ui("theme", color)
 	}
+
+	const materialThemeFile = async (file: File) => {
+		// @ts-ignore
+		await ui("theme", file)
+	}
+
 	useEffect(() => {
 		document.body.className = dark ? "dark" : "light"
+
+		if (input === "") {
+		}
 	}, [dark])
 
 	useEffect(() => {
-		materialTheme(input)
-	}, [input, dark, currentFile])
+		if (currentFile) {
+			materialThemeFile(currentFile as File)
+		} else {
+			materialThemeColor(input)
+		}
+	}, [input, dark])
 
 	return (
 		<div className={`modal right ${isOpen}`}>
 			<h5>Theming</h5>
 			<div>Choose any color for Material You themes!</div>
+			<div>Re-open the sidebar to interchange theme!</div>
 			<div className="small-divider"></div>
 			<div style={{ marginTop: "20px" }}>
-				<input type="color" onChange={(e) => setInput(e.target.value)} />
-				<div style={{marginTop: "15px"}}>
-					OR
-				</div>
+				<input
+					type="color"
+					onChange={(e) => setInput(e.target.value)}
+					value={input}
+				/>
+				<div style={{ marginTop: "15px" }}>OR</div>
 				<div className="field label border round">
 					<input type="text" />
-					{/* @ts-ignore */}
-					<input type="file" accept=".jpg, .png, .jpeg, .webp, .svg" onChange={selectFile} />
+					<input
+						type="file"
+						accept=".jpg, .png, .jpeg, .webp, .svg"
+						// @ts-ignore
+						onChange={selectFile}
+					/>
 					<label>Upload Your Photo</label>
 					<span className="helper">Choose any photo to apply theme.</span>
 				</div>
@@ -58,9 +73,16 @@ function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 				<button className="border round" onClick={onClose}>
 					Close
 				</button>
-				<button className="round" onClick={updateDark}>
+				<button
+					className="round"
+					onClick={updateDark}
+					disabled={input === "" && currentFile === undefined ? true : false}
+				>
+					{input === "" && currentFile === undefined ? (
+						<div className="tooltip bottom">Choose Theme To Toggle</div>
+					) : null}
 					<i>palette</i>
-					<span>Dark Mode</span>
+					<span>{dark ? "Light" : "Dark"} Mode</span>
 				</button>
 			</nav>
 		</div>

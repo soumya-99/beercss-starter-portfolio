@@ -34,7 +34,7 @@ function SideBar({ isOpen, onClose }: SideBarProps) {
 					<span>About Me</span>
 				</NavLink>
 				<NavLink to="/projects" className="row round">
-					<i>fingerprint</i>
+					<i>rocket_launch</i>
 					<span>Projects</span>
 				</NavLink>
 				<NavLink to="/more" className="row round">

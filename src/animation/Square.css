@@ -1,0 +1,21 @@
+.square {
+    position: absolute;
+    opacity: 0.8;
+    animation: squares 3s linear infinite;
+    transition: transform .5s;
+}
+
+@keyframes squares {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(40deg);
+    }
+    50% {
+        transform: rotate(100deg);
+    }
+    0% {
+        transform: rotate(360deg);
+    }
+}
