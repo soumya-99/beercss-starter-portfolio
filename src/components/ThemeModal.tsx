@@ -45,7 +45,20 @@ function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 	}, [input, dark])
 
 	return (
-		<div className={`modal right ${isOpen}`}>
+		<div
+			className={`modal right ${isOpen}`}
+			style={
+				dark
+					? {
+							backgroundColor: "rgba(3, 8, 6, 0.5)",
+							backdropFilter: "blur(4px)",
+					  }
+					: {
+						backgroundColor: "rgba(250, 240, 230, 0.5)",
+						backdropFilter: "blur(4px)",
+					  }
+			}
+		>
 			<h5>Theming</h5>
 			<div>Choose any color for Material You themes!</div>
 			<div>Re-open the sidebar to interchange theme!</div>

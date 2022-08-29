@@ -30,13 +30,13 @@ function Home() {
 				full-stack developer.
 			</p>
 			<div>
-				<Ball color="var(--tertiary-container)" top="10vh" left="2vw" />
+				<Ball color="var(--tertiary-container)" top="10vh" left="2vw" size="60px"/>
 				<Square left="30vw" top="25vh" radius="10px" color="var(--inverse-primary)" />
-				<Ball color="var(--tertiary-container)" top="2px" left="60vw" />
+				<Ball color="var(--tertiary-container)" top="2px" left="60vw" size="50px" />
 				<div className="body-elems">
 					<img
 						className="round extra"
-						style={{ width: "50%", height: "50%", borderRadius: "30px" }}
+						style={{ width: "50%", height: "50%", borderRadius: "30px"}}
 						src={mu}
 					/>
 					<a
