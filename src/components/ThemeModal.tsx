@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { useTheme, useThemeUpdate } from "../context/ThemeProvider"
 
 interface ThemeModalProps {
@@ -29,7 +29,7 @@ function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 		await ui("theme", file)
 	}
 
-	useEffect(() => {
+	useMemo(() => {
 		document.body.className = dark ? "dark" : "light"
 	}, [dark])
 
