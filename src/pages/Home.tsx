@@ -111,9 +111,9 @@ function Home() {
 					/>
 					<Square
 						left="30vw"
-						top="25vh"
+						top="20vh"
 						radius="10px"
-						color="var(--inverse-primary)"
+						color="var(--secondary)"
 					/>
 					<Ball
 						color="var(--tertiary-container)"
