@@ -61,27 +61,41 @@ function Home() {
 					</div>
 				</div>
 				<div className="social">
-					<a className="chip round medium tertiary">
+					<a
+						className="chip round medium tertiary"
+						href="https://github.com/soumya-99/"
+						target="_blank"
+					>
 						<img className="responsive" src={gh} />
 						<span>GitHub</span>
 					</a>
-					<a className="chip round medium secondary">
+					<a
+						className="chip round medium secondary"
+						href="https://www.instagram.com/m0ndal.s0umyadeep/"
+						target="_blank"
+					>
 						<img className="responsive" src={insta} />
 						<span>Instagram</span>
 					</a>
-					<a className="chip round medium primary-container">
+					<a
+						className="chip round medium primary-container"
+						href="https://www.facebook.com/soumyadeep.mondal.99/"
+						target="_blank"
+					>
 						<img className="responsive" src={fb} />
 						<span>Facebook</span>
 					</a>
 					<a
-						href="https://github.com/soumya-99/"
+						href="https://www.youtube.com/channel/UCPwTZ55zPbRP8FUeLhuRJeA"
+						target="_blank"
 						className="chip round medium inverse-primary"
 					>
 						<img className="responsive" src={youtube} />
 						<span>YouTube</span>
 					</a>
 					<a
-						href="https://github.com/soumya-99/"
+						href="https://twitter.com/Soumyadeep5000"
+						target="_blank"
 						className="chip round medium tertiary-container"
 					>
 						<img className="responsive" src={twit} />
