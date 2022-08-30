@@ -43,10 +43,10 @@ function Skills() {
 								left="30vw"
 								top="25vh"
 								radius="10px"
-								color="var(--inverse-primary)"
+								color="var(--inverse-surface)"
 							/>
 							<Ball
-								color="var(--tertiary-container)"
+								color="var(--primary)"
 								top="2px"
 								left="60vw"
 								size="50px"
@@ -73,14 +73,14 @@ function Skills() {
 					<div className="skills">
 							<Square
 								left="2vw"
-								top="25vh"
+								top="20vh"
 								radius="10px"
-								color="var(--inverse-primary)"
+								color="var(--primary-container)"
 							/>
 							<Ball color="var(--error)" top="10vh" left="30vw" size="60px" />
 							<Square
 								left="65vw"
-								top="25vh"
+								top="30vh"
 								radius="10px"
 								color="var(--tertiary-container)"
 							/>
