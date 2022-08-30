@@ -14,10 +14,10 @@ function AboutMe() {
 				consectetur, ea minus.
 			</p>
 
+			{/* <Card />
 			<Card />
 			<Card />
-			<Card />
-			<Card />
+			<Card /> */}
 		</div>
 	)
 }

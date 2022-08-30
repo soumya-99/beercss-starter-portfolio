@@ -1,0 +1,21 @@
+@media screen and (max-width: 739px) {
+	article {
+		width: 100% !important;
+	}
+}
+
+article {
+    transition: all 0.5s;
+}
+
+article:hover {
+    transform: scale(0.95);
+}
+
+.card-title {
+	font-weight: bold;
+}
+
+.project-refs > a {
+	text-transform: uppercase;
+}

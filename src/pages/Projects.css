@@ -1,0 +1,9 @@
+.projects-body {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.proj-body-up {
+	color: var(--primary);
+}

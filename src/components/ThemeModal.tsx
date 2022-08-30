@@ -31,6 +31,7 @@ function ThemeModal({ isOpen, onClose }: ThemeModalProps) {
 
 	useMemo(() => {
 		document.body.className = dark ? "dark" : "light"
+		setInput(input)
 	}, [dark])
 
 	useEffect(() => {
