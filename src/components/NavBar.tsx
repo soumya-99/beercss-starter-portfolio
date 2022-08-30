@@ -28,13 +28,13 @@ function NavBar() {
 					<i>widgets</i>
 					<span>Skills</span>
 				</NavLink>
-				<NavLink to="/aboutme">
-					<i>account_circle</i>
-					<span>About Me</span>
-				</NavLink>
 				<NavLink to="/projects">
 					<i>rocket_launch</i>
 					<span>Projects</span>
+				</NavLink>
+				<NavLink to="/aboutme">
+					<i>account_circle</i>
+					<span>About Me</span>
 				</NavLink>
 				<NavLink to="/more">
 					<i>code</i>

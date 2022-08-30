@@ -28,7 +28,7 @@
 	font-size: 2em;
 	font-weight: bold;
 	text-align: left;
-	text-indent: 1.5em;
+	/* text-indent: 1.5em; */
 	line-height: 1.3cm;
 	color: var(--primary);
 }
@@ -38,10 +38,14 @@
 	align-items: center;
 	flex: 1;
 	justify-content: space-between;
-	bottom: 20px;
+	bottom: 15px;
 	text-align: center;
-	margin-left: 8vw;
+	margin-top: 2vh;
+	margin-left: 7.5vw;
 	margin-right: 8vw;
+	padding: 25px;
+	border: 10px dashed var(--secondary);
+	border-radius: 40px;
 }
 
 .social {
@@ -66,8 +70,12 @@
 		flex-direction: column;
 	}
 	.body-main {
+		margin-left: 5vw;
+	margin-right: 5vw;
 		margin-top: 2vh;
 		flex-direction: column-reverse;
+	}
+	.body-text {
 		text-align: justify;
 	}
 	.social {

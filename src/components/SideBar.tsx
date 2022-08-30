@@ -29,13 +29,13 @@ function SideBar({ isOpen, onClose }: SideBarProps) {
 					<i>widgets</i>
 					<span>Skills</span>
 				</NavLink>
-				<NavLink to="/aboutme" className="row round">
-					<i>account_circle</i>
-					<span>About Me</span>
-				</NavLink>
 				<NavLink to="/projects" className="row round">
 					<i>rocket_launch</i>
 					<span>Projects</span>
+				</NavLink>
+				<NavLink to="/aboutme" className="row round">
+					<i>account_circle</i>
+					<span>About Me</span>
 				</NavLink>
 				<NavLink to="/more" className="row round">
 					<i>code</i>
