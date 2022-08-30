@@ -38,8 +38,9 @@
 	flex: 1;
 	justify-content: space-between;
 	bottom: 20px;
-	width: 74vw;
-	margin-left: 7%;
+	text-align: center;
+	margin-left: 8vw;
+	margin-right: 8vw;
 }
 
 .social {
@@ -66,6 +67,7 @@
 	.body-main {
 		margin-top: 2vh;
 		flex-direction: column-reverse;
+		text-align: justify;
 	}
 	.social {
 		margin-top: -2vh;

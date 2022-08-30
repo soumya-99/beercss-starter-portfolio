@@ -29,24 +29,36 @@ function Home() {
 					</h3>
 					<span className="underline"></span>
 				</div>
-				<div className="body-main">
-					<p className="body-text">
-						I'm{" "}
-						<span style={{ color: "var(--tertiary)" }}>Soumyadeep Mondal</span>{" "}
-						and currently I'm creating projects in{" "}
-						<span style={{ color: "gold" }}>JavaScript</span>,{" "}
-						<span style={{ color: "cornflowerblue" }}>TypeScript</span>, &{" "}
-						<span style={{ color: "dodgerblue" }}>Python</span>.{" "}
-						<span style={{ color: "skyblue" }}>React</span>,{" "}
-						<span style={{ color: "forestgreen" }}>Django</span> &{" "}
-						<span style={{ color: "orange" }}>Firebase</span> Lover. I'm a
-						full-stack developer. Follow me on...
-					</p>
-					<img
-						className="round me"
-						style={{ width: "200px", height: "200px", borderRadius: "50%" }}
-						src={me2}
-					/>
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "center",
+						alignItems: "center",
+						width: "100%",
+						textAlign: "center",
+					}}
+				>
+					<div className="body-main">
+						<p className="body-text">
+							I'm{" "}
+							<span style={{ color: "var(--tertiary)" }}>
+								Soumyadeep Mondal
+							</span>{" "}
+							and currently I'm creating projects in{" "}
+							<span style={{ color: "gold" }}>JavaScript</span>,{" "}
+							<span style={{ color: "cornflowerblue" }}>TypeScript</span>, &{" "}
+							<span style={{ color: "dodgerblue" }}>Python</span>.{" "}
+							<span style={{ color: "skyblue" }}>React</span>,{" "}
+							<span style={{ color: "forestgreen" }}>Django</span> &{" "}
+							<span style={{ color: "orange" }}>Firebase</span> Lover. I'm a
+							full-stack developer. Follow me on...
+						</p>
+						<img
+							className="round me"
+							style={{ width: "200px", height: "200px", borderRadius: "50%" }}
+							src={me2}
+						/>
+					</div>
 				</div>
 				<div className="social">
 					<a className="chip round medium tertiary">
@@ -111,9 +123,12 @@ function Home() {
 							<span>Click here to learn more</span>
 						</a>
 					</div>
-					<h5>
-						Hands dirty with the design concept Material You (Material Design 3)
-					</h5>
+					<div style={{ textAlign: "center", width: "100%" }}>
+						<h6>
+							Getting my hands dirty with the new design concept "Material You"
+							(Material Design 3)
+						</h6>
+					</div>
 					{/* @ts-ignore */}
 					<marquee>
 						"Material Design&#8482;" and "Material You&#8482;" is a TM by Google
