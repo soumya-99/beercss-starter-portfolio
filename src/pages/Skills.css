@@ -1,47 +1,47 @@
 .skills-head {
-    color: var(--secondary);
-    font-weight: 600;
-    background-color: rgba(78, 179, 238, 0);
-    border-radius: 20px;
-    padding: 10rem;
-    transition: colorChange 1s;
+	color: var(--secondary);
+	font-weight: 600;
+	background-color: rgba(78, 179, 238, 0);
+	border-radius: 20px;
+	padding: 10rem;
+	transition: colorChange 1s;
 }
 
 .skills-head:hover {
-    animation: colorChange 2s linear infinite;
+	animation: colorChange 2s linear infinite;
 }
 
 @keyframes colorChange {
-    0% {
-        background-color: rgba(84, 252, 201, 0.582);
-    }
-    25% {
-        background-color: rgba(211, 255, 89, 0.582);
-    }
-    50% {
-        background-color: rgba(248, 199, 92, 0.582);
-    }
-    75% {
-        background-color: rgba(255, 89, 89, 0.582);
-    }
-    100% {
-        background-color: rgba(252, 71, 192, 0.582);
-    }
-    0% {
-        background-color: rgba(78, 179, 238, 0.582);
-    }
+	0% {
+		background-color: rgba(84, 252, 201, 0.582);
+	}
+	25% {
+		background-color: rgba(211, 255, 89, 0.582);
+	}
+	50% {
+		background-color: rgba(248, 199, 92, 0.582);
+	}
+	75% {
+		background-color: rgba(255, 89, 89, 0.582);
+	}
+	100% {
+		background-color: rgba(252, 71, 192, 0.582);
+	}
+	0% {
+		background-color: rgba(78, 179, 238, 0.582);
+	}
 }
 
 .skill-elems {
-    margin-top: 3vh;
-    margin-left: 3.5vw;
-    margin-right: 4vw;
-    margin-bottom: 3vh;
+	margin-top: 3vh;
+	margin-left: 3.5vw;
+	margin-right: 4vw;
+	margin-bottom: 3vh;
 }
 
 .skills > span > p {
-    font-family: android-euclid;
-    font-size: 25rem;
-    font-weight: bold;
-    color: var(--on-primary-container);
+	font-family: android-euclid;
+	font-size: 25rem;
+	font-weight: bold;
+	color: var(--on-primary-container);
 }
