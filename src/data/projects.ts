@@ -6,7 +6,7 @@ import vscode from "../assets/images/vscode.png"
 import insta from "../assets/icons/insta.webp"
 import meme from "../assets/images/meme.png"
 
-export const PROJECTS: any[] = [
+export const PROJECTS: { id: number, image: string, title: string, description: string, btnText: string, width: string, link: string }[] = [
     {
         id: 1,
         image: mapify,
