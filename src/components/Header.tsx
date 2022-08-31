@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import img1 from "../assets/images/me.jpg"
+import img1 from "../assets/images/me.webp"
 import SideBar from "./SideBar"
 
 interface HeaderProps {

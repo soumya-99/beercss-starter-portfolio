@@ -1,10 +1,10 @@
-import mapify from "../assets/images/mapify.png"
-import covR from "../assets/images/coronaR.png"
-import mu from "../assets/images/mu.png"
-import covinfo from "../assets/images/covinfo.png"
-import vscode from "../assets/images/vscode.png"
+import mapify from "../assets/images/mapify.webp"
+import covR from "../assets/images/coronaR.webp"
+import mu from "../assets/images/mu.webp"
+import covinfo from "../assets/images/covinfo.webp"
+import vscode from "../assets/images/vscode.webp"
 import insta from "../assets/icons/insta.webp"
-import meme from "../assets/images/meme.png"
+import meme from "../assets/images/meme.webp"
 
 export const PROJECTS: { id: number, image: string, title: string, description: string, btnText: string, width: string, link: string }[] = [
     {
