@@ -39,7 +39,7 @@
     margin-bottom: 3vh;
 }
 
-.skills > p {
+.skills > span > p {
     font-family: android-euclid;
     font-size: 25rem;
     font-weight: bold;
