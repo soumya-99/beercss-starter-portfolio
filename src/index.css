@@ -30,7 +30,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--background);
 	color: var(--on-background);
-	transition: all 0.5s cubic-bezier(0.57, 0.28, 0.3, 1.05);
+	transition: all 0.5s cubic-bezier(0.56, 0.19, 0.06, 1.15);
 }
 
 code {
