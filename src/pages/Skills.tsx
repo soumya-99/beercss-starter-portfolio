@@ -24,8 +24,8 @@ function Skills() {
 						{"<>"}Web Skills{"</>"}
 					</h4>
 					<div className="skills">
-						{WEB_SKILLS.map((skill, index) => (
-							<span key={index}>
+						{WEB_SKILLS.map((skill) => (
+							<span key={skill.id}>
 								<p>{skill.name}</p>
 								<ProgressBar
 									id={skill.id}
@@ -53,8 +53,8 @@ function Skills() {
 						<h4 className="skills-head">
 							{"<>"}Programming Languages{"</>"}
 						</h4>
-						{PROGRAMMING_LANGS.map((skill, index) => (
-							<span key={index}>
+						{PROGRAMMING_LANGS.map((skill) => (
+							<span key={skill.id}>
 								<p>{skill.name}</p>
 								<ProgressBar
 									id={skill.id}
@@ -82,8 +82,8 @@ function Skills() {
 						<h4 className="skills-head">
 							{"<>"}Technologies Known{"</>"}
 						</h4>
-						{TECH_KNOWN.map((skill, index) => (
-							<span key={index}>
+						{TECH_KNOWN.map((skill) => (
+							<span key={skill.id}>
 								<p>{skill.name}</p>
 								<ProgressBar
 									id={skill.id}
