@@ -40,7 +40,7 @@
 }
 
 .skills > span > p {
-	font-family: android-euclid;
+	font-family: google-sans;
 	font-size: 25rem;
 	font-weight: bold;
 	color: var(--on-primary-container);

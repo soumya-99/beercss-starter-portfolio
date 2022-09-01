@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { NavLink, Route } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import img1 from "../assets/images/me.webp"
 import Theme from "./Theme"
 import ThemeModal from "./ThemeModal"

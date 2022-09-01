@@ -1,7 +1,3 @@
-.page {
-	font-family: google-sans;
-}
-
 .typedElem {
 	display: flex;
 	flex-direction: column;

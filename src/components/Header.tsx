@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import img1 from "../assets/images/me.webp"
 import SideBar from "./SideBar"
 
 interface HeaderProps {
 	title: string
-	// toggleDark?: () => void
 }
 
 function Header({ title = "Soumyadeep Mondal" }: HeaderProps) {

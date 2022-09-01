@@ -26,10 +26,10 @@ function More() {
 			/>
 			<Ball left="70vw" top="10vh" size="40px" />
 			<Ball color="var(--primary)" top="20vh" left="65vw" size="50px" />
-			<div className="page top active">
+			<div className="page top active" style={{ height: "100vh" }}>
 				<h2>More</h2>
 				<hr />
-				<h5 style={{color: "var(--primary)"}}>
+				<h5 style={{ color: "var(--primary)" }}>
 					I will upload my future blog articles and external article links over
 					here. This section is reserved for that purpose only.
 				</h5>
