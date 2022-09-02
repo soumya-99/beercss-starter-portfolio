@@ -51,7 +51,7 @@ function Home() {
 							<span style={{ color: "skyblue" }}>React</span>,{" "}
 							<span style={{ color: "forestgreen" }}>Django</span> &{" "}
 							<span style={{ color: "orange" }}>Firebase</span> Lover. I'm a
-							full-stack developer. Follow me on...
+							full-stack developer. Find more below.
 						</p>
 						<img
 							className="round me"
@@ -61,6 +61,14 @@ function Home() {
 					</div>
 				</div>
 				<div className="social">
+					<a
+						className="chip round medium primary"
+						href="https://drive.google.com/file/d/1-XW0-CtIhax6-uPfJh6UBWFdCNpufrKo/view?usp=sharing"
+						target="_blank"
+					>
+						<i className="small">file_present</i>
+						<span>Resume</span>
+					</a>
 					<a
 						className="chip round medium tertiary"
 						href="https://github.com/soumya-99/"

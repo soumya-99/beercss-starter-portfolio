@@ -1,5 +1,6 @@
 import Ball from "../animation/Ball"
 import Square from "../animation/Square"
+import Card from "../components/Card"
 
 function AboutMe() {
 	return (
@@ -40,13 +41,10 @@ function AboutMe() {
 						flexWrap: "wrap",
 					}}
 				>
-					<article
-						className="round primary-container"
-						style={{ width: "30vw" }}
-					>
-						<h5>Education</h5>
-						<div className="small-divider secondary"></div>
-						<div>
+					<Card
+						width="30vw"
+						title="Education"
+						bodyText={
 							<ul style={{ padding: "15px" }}>
 								<li>
 									<h6>
@@ -61,12 +59,12 @@ function AboutMe() {
 									</h6>
 								</li>
 							</ul>
-						</div>
-					</article>
-					<article className="round primary" style={{ width: "45vw" }}>
-						<h5>Experience</h5>
-						<div className="small-divider secondary"></div>
-						<div>
+						}
+					/>
+					<Card
+						width="45vw"
+						title="Experience"
+						bodyText={
 							<ul style={{ padding: "15px" }}>
 								<li>
 									<h6>
@@ -80,13 +78,13 @@ function AboutMe() {
 									</h6>
 								</li>
 							</ul>
-						</div>
-					</article>
-					<article className="round tertiary" style={{ width: "45vw" }}>
-						<h5>Let me think...</h5>
-						<div className="small-divider secondary"></div>
-						<p>Done Later!!!</p>
-					</article>
+						}
+					/>
+					<Card
+						width="30vw"
+						title="Want to contact with me?"
+						bodyText="Done Later!!!"
+					/>
 				</div>
 			</div>
 		</>

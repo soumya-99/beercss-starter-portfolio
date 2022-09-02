@@ -3,8 +3,8 @@ import "./Card.css"
 interface CardProps {
 	image?: string
 	title: string
-	bodyText: string
-	buttonText: string
+	bodyText: string | JSX.Element
+	buttonText?: string
 	width?: string
 	margin?: string
 	link?: string
@@ -21,23 +21,22 @@ function Card({
 }: CardProps) {
 	return (
 		<article
-			className="no-padding round fill"
+			className={`no-padding round fill`}
 			style={{ width: `${width}`, margin: `${margin}` }}
 		>
-			<img className="responsive small top-round" src={image} />
+			{image && <img className="responsive small top-round" src={image} />}
 			<div className="padding">
 				<h5 className="card-title">{title}</h5>
+				<div className="small-divider secondary"></div>
 				<p>{bodyText}</p>
-				<nav className="project-refs">
-					<a
-						className="chip round tertiary"
-						href={link}
-						target="_blank"
-					>
-						<i className="small">call_made</i>
-						<span>{buttonText}</span>
-					</a>
-				</nav>
+				{buttonText && (
+					<nav className="project-refs">
+						<a className="chip round tertiary" href={link} target="_blank">
+							<i className="small">call_made</i>
+							<span>{buttonText}</span>
+						</a>
+					</nav>
+				)}
 			</div>
 		</article>
 	)
