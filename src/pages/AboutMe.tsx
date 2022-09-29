@@ -83,7 +83,13 @@ function AboutMe() {
 					<Card
 						width="30vw"
 						title="Want to contact with me?"
-						bodyText="Done Later!!!"
+						bodyText={
+							<div>
+								Here's my Email Address. You can contact me through this.
+							</div>
+						}
+						buttonText="Mail Me"
+						link="mailto:soumyadeep891079@gmail.com"
 					/>
 				</div>
 			</div>
