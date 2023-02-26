@@ -45,7 +45,7 @@ export const PROGRAMMING_LANGS: { name: string, id: string, color: string, progr
         progress: 70,
     },
     {
-        name: "C",
+        name: "C++",
         id: "pg8",
         color: "secondary",
         progress: 70,
