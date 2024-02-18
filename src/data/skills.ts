@@ -9,7 +9,7 @@ export const WEB_SKILLS: { name: string, id: string, color: string, progress: nu
         name: "Django",
         id: "pg2",
         color: "primary",
-        progress: 70,
+        progress: 60,
     },
     {
         name: "Firebase",
@@ -21,7 +21,7 @@ export const WEB_SKILLS: { name: string, id: string, color: string, progress: nu
         name: "React Native (TS/JS)",
         id: "pg4",
         color: "primary",
-        progress: 70,
+        progress: 90,
     },
 ]
 
