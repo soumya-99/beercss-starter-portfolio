@@ -45,12 +45,14 @@ function Home() {
 								Soumyadeep Mondal
 							</span>{" "}
 							and currently I'm creating projects in{" "}
+							<span style={{ color: "cornflowerblue" }}>React Native</span>,{" "}
 							<span style={{ color: "gold" }}>JavaScript</span>,{" "}
 							<span style={{ color: "cornflowerblue" }}>TypeScript</span>, &{" "}
 							<span style={{ color: "dodgerblue" }}>Python</span>.{" "}
 							<span style={{ color: "skyblue" }}>React</span>,{" "}
+							<span style={{ color: "dodgerblue" }}>Fast API</span>,{" "}
 							<span style={{ color: "forestgreen" }}>Django</span> &{" "}
-							<span style={{ color: "orange" }}>Firebase</span> Lover. I'm a
+							<span style={{ color: "orange" }}>Firebase</span> Lover. A
 							full-stack developer. Find more below.
 						</p>
 						<img
