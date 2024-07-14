@@ -6,9 +6,37 @@ import vscode from "../assets/images/vscode.webp"
 import insta from "../assets/icons/insta.webp"
 import meme from "../assets/images/meme.webp"
 import bill365 from "../assets/images/bill365.webp"
+import parking from "../assets/images/parking.webp"
 import databank from "../assets/images/databank.webp"
 
 export const PROJECTS: { id: number, image: string, title: string, description: string, btnText: string, width: string, link: string }[] = [
+    {
+        id: 8,
+        image: bill365,
+        title: "Bill365",
+        description: "It's an Android Application which can create and print bills. Integrated POS thermal printer with it.",
+        btnText: "Project Link",
+        width: "40vw",
+        link: "https://bill365.app/"
+    },
+    {
+        id: 9,
+        image: parking,
+        title: "Synergic Parking",
+        description: "A POS device application to generate parking tickets along with toll tax. Integrated android thermal printer with it.",
+        btnText: "Project Link",
+        width: "40vw",
+        link: "#"
+    },
+    {
+        id: 10,
+        image: databank,
+        title: "Databank",
+        description: "An android application to collect money from rural and urban Co-operative banks. Integrated thermal printer with it to generate bills.",
+        btnText: "Project Link",
+        width: "40vw",
+        link: "#"
+    },
     {
         id: 1,
         image: mapify,

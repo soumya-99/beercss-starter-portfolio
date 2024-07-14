@@ -68,6 +68,11 @@ function AboutMe() {
 							<ul style={{ padding: "15px" }}>
 								<li>
 									<h6>
+										Software Engineer at Synergic Softek Solutions Pvt. Ltd. [Aug 2023 - Present]
+									</h6>
+								</li>
+								<li>
+									<h6>
 										Full Stack Web Developer Intern at Phurti.in [Nov 2021 - Dec
 										2021]
 									</h6>
