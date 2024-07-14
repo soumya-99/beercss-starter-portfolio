@@ -5,6 +5,8 @@ import covinfo from "../assets/images/covinfo.webp"
 import vscode from "../assets/images/vscode.webp"
 import insta from "../assets/icons/insta.webp"
 import meme from "../assets/images/meme.webp"
+import bill365 from "../assets/images/bill365.webp"
+import databank from "../assets/images/databank.webp"
 
 export const PROJECTS: { id: number, image: string, title: string, description: string, btnText: string, width: string, link: string }[] = [
     {
@@ -69,5 +71,23 @@ export const PROJECTS: { id: number, image: string, title: string, description: 
         btnText: "Project Link",
         width: "40vw",
         link: "https://github.com/soumya-99/meme-app"
+    },
+    {
+        id: 8,
+        image: bill365,
+        title: "Bill365",
+        description: "Completely customizable Android Application which is used for creating bills. Integrated UPI as well as POS bluetooth thermal printer.",
+        btnText: "Project Link",
+        width: "40vw",
+        link: "https://bill365.app/"
+    },
+    {
+        id: 9,
+        image: databank,
+        title: "Data Bank (Collection App)",
+        description: "Developed a money collection app for a co-operative bank serving 3000+ users, enhancing UX/UI by 40% post-launch. Integrated RESTful APIs and thermal printer for streamlined functionality. Core features include Authentication, Account Search, RD/FD tracking, Reports, and collection management tools.",
+        btnText: "Project Link",
+        width: "40vw",
+        link: "https://github.com/soumya-99/data-bank-v2"
     },
 ]

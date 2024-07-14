@@ -63,7 +63,7 @@ function Home() {
 				<div className="social">
 					<a
 						className="chip round medium primary"
-						href="https://drive.google.com/file/d/1-XW0-CtIhax6-uPfJh6UBWFdCNpufrKo/view?usp=sharing"
+						href="https://drive.google.com/file/d/1m4YHG48Sc-W4LMj6Ok31SS7MB4ASmm3u/view?usp=drive_link"
 						target="_blank"
 					>
 						<i className="small">file_present</i>
