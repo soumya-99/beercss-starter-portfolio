@@ -3,7 +3,7 @@ import mu from "../assets/images/mat_you.webp"
 import me2 from "../assets/images/me2.webp"
 import gh from "../assets/icons/github.png"
 import youtube from "../assets/icons/youtube.webp"
-import twit from "../assets/icons/twit.png"
+import twit from "../assets/icons/x.png"
 import insta from "../assets/icons/insta.webp"
 import fb from "../assets/icons/fb.webp"
 import Ball from "../animation/Ball"
@@ -81,7 +81,7 @@ function Home() {
 					</a>
 					<a
 						className="chip round medium secondary"
-						href="https://www.instagram.com/m0ndal.s0umyadeep/"
+						href="https://www.instagram.com/thecolorsofvoid/"
 						target="_blank"
 					>
 						<img className="responsive" src={insta} />
